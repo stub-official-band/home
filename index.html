@@ -6,8 +6,17 @@
 		<link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
 		<title>We Are Stub</title>
 		<style>
+
+.noselect{
+  -webkit-user-select: none; /*  Safari */        
+  -moz-user-select: none; /*  Firefox */
+  -ms-user-select: none; /*  IE10+/Edge */
+  user-select: none; /*  Standard */
+	/*  IE9+ uses "noselect" attribute */
+}
+
 body{
-	background-color: ##FEF5F5;
+	background-color: #FEF5F5;
 	font-family: 'Roboto Slab', serif;
 	color: #05386B;
 }
@@ -29,7 +38,7 @@ body{
 }
 
 .about:hover{
-  background: ##FEF5F5;
+  background: #FEF5F5;
   color: #05386b;
   transform: rotate(360deg);
 }
@@ -82,7 +91,7 @@ body{
 	position: absolute;
 	font-family: 'Faster One', Cursive;
 	font-size: 350px;
-	left: 12%;
+	left: 13%;
 	top: 25%;
 }
 
@@ -92,9 +101,11 @@ body{
 		</style>
 	</head>
 <body>
-	<div class="about" onclick="window.location.href='https://stub-official-band.github.io/aboutus';">About Us</div>
+        <div class="noselect" unselectable="on">
+  <div class="about" onclick="window.location.href='https://stub-official-band.github.io/aboutus';">About Us</div>
   <div class="posts">Daily Posts</div>
   <div class="AlbumA">Album Art</div>
   <div class="MAINlogo">STUB</div><br><strong>The homepage is under construction, more coming soon! -STUB</strong>
+        </div>
 </body>
 </html>
